@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+ .align-center{
+    align-items: center;
+ }
+
+ .button{
+   
+    text-align: center;
+    padding: 16px 20px;
+    display: inline-block;
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    font-size:20px;
+    font-weight: 500;
+    border-radius: 5px ;
+   
+}
+
+.heading{
+    text-align: center;
+    color: var(--primarycolor);
+}
+.heading h4{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--secondfont);
+    
+}
+
+
+:root{
+  --firstfont: 'Ubuntu', sans-serif;
+  --secondfont: 'Abril Fatface';
+  --thirdfont: 'Open Sans', sans-serif;
+  --primarycolor: #0f2f44;
+  --secondarycolor:#ffc706;
+}
+
+
+/*Header start*/
+header{
+    background-color:var(--primarycolor);
+    color: white;
+    padding: 18px 0;
+}
+
+header .welcometext{
+    width: 50%;
+
+}
+header .openingtext{
+    width: 50%;
+    text-align: right;
+}
+/*Header end*/
+
+/*Nav start*/
+nav .logo{
+    width: 30%;
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+   
+}
+nav .menu ul li a{
+    color:#222222;
+    padding: 40px 19px;
+    display: block;
+    font-size: 500;
+    font-size: 16px;
+    transition: 0.3s;
+
+
+}
+nav .menu ul li a:hover{
+    background-color:#fff9e6;
+    color: var(--secondarycolor);
+}
+nav .search{
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   display: block;
+   border-radius: 50% ;
+   border: 1px solid #ddd;
+   color: #999;
+}
+nav .cross{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 20px;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color: #999;
+}
+/*Nav end*/
+
+/*Banner start*/
+#banner{ 
+    background-image: url(../images/banner.jpg);
+    height: 593px;
+    background-position: center; 
+}
+
+#banner .banner-cnt{
+    width: 40%;
+}
+#banner .banner-cnt h2{
+    font-size:50px ;
+    font-weight: 300 ;
+    color: var(--primarycolor);
+}
+#banner .banner-cnt h1{
+    font-family: var(--firstfont);
+    font-size: 80px;
+    color: var(--primarycolor);
+    margin: -5px;
+
+}
+#banner .banner-cnt h4{
+    font-size: 32px;
+    font-weight: 400;
+    color: #8484bf;
+    letter-spacing: 20px;
+}
+
+#banner .banner-cnt p{
+    font-family: var(--thirdfont);
+    font-size: 14px ;
+    margin: 30px 0;
+    color: #444444;
+    line-height: 21px;
+}
+#banner .banner-cnt .button{
+    background-color: #8484bf;
+    color: white;
+}
+#banner .banner-cnt a:last-child{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 20px;
+    color: #8484bf;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+
+}
+#banner .row{
+    height: 593px;
+}
+
+/*banner end*/
+
+/*About start*/
+#About{
+    padding: 100px 0;
+}
+
+#About .about-text{
+    width: 60%;
+
+}
+#About .about-image{
+    width: 40%;
+}
+
+#About .about-image img{
+    width: 100%;
+}
+#About .about-text .heading{
+    text-align: left;
+    padding: 27px 0;
+}
+
+#About .about-text p{
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    line-height: 20px;
+}    
+
+#About .about-text ul{
+    margin-left: 30px;
+}
+#About .about-text ul li{
+    margin: 30px 0;
+}
+
+#About .about-text  a:last-child{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 15px;
+}
+/*About end*/
+
+/*skill start*/
+#skill{
+    padding-bottom: 90px;
+}
+
+ #skill .skill-image{
+    width: 45%;
+ }
+ #skill .skill-image img{
+    width: 100%;
+ }
+ #skill .skill-text{
+    width: 55%;
+ }
+ #skill .skill-text .heading{
+   text-align: right;
+   padding: 20px 0;
+ }
+ #skill .skill-text  p{
+    text-align: right;
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    font-weight: 400;
+ }
+ #skill .Myskill{
+    text-align: right;
+ }
+/*skill ends*/
+
+/*service start*/
+#service{
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+#service .servicecard{
+    background-color: #e9e9e9;
+    width: calc(33.33% - 30px);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 15px;
+}
+#service .heading{
+    margin-bottom: 56px;
+
+}
+
+.servicecard .icon{
+    width: 20%;
+    text-align: center;
+    
+}
+
+.servicecard .text{
+    width: 80%;
+    padding: 30px 20px;
+    background-color: #eeeeee;
+}
+
+.servicecard .text h3{
+    font-size: 20px;
+    font-weight: 400;
+    color:#222222;
+    margin: 20px 0;
+}
+
+.servicecard .text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+}
+
+.servicecard .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: var(--primarycolor);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.servicecard:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.servicecard .overlay h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.servicecard .overlay span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--secondarycolor);
+    display: inline-block;
+    border-radius: 50%;
+   position: absolute;
+   bottom: -19px;
+   left: 50%;
+   transform: translatex(-50%);
+   color: #222222;
+}
+/*service end*/
+
+/*protfolio start*/
+#protfolio {
+    padding: 60px 0;
+  
+}
+#protfolio .heading{
+    margin-bottom: 60px;
+}
+
+.protfolio-card{
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    position:relative ;
+}
+.protfolio-card img{
+    display: block;
+    width: 100%;
+}
+
+#protfolio .button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.protfolio-card .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 500;
+    color: var(--primarycolor);
+    transform: scaley(0);
+    transition: 0.5s;
+    transform-origin: bottom;
+}
+.protfolio-card:hover .overlay{
+    transform: scaley(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*protfolio End*/
+
+/*testimonial start*/
+ #testimonial{
+    background-color: #f5f5f5;
+    padding: 80px 0;
+
+ }
+
+ #testimonial .heading{
+    margin-bottom: 60px;
+ }
+
+ #testimonial .testimonial-card{
+    background-color: #e9e9e9;
+    width: calc(50% - 30px);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 15px;
+ }
+
+ .testimonial-card .image{
+    width: 40%;
+    text-align: center;
+   
+ }
+  
+ .testimonial-card .image img{
+    width: 100%;
+ }
+
+ .testimonial-card .text{
+    width: 60%;
+    padding: 30px 20px;
+    background-color: #eeeeee;
+ }
+
+ .testimonial-card .text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+    
+ }
+ .testimonial-card .text h3{
+    font-size: 20px;
+    font-weight: 400;
+    color:#222222;
+    margin: 13px 0;
+ }
+  .testimonial-card .text h4{
+    font-size: 13px;
+    font-weight: 400;
+    color: #222;
+
+  }
+
+/*testimonial end*/
+
+/*Blog Start*/
+#blog{
+    padding: 60px 0;
+}
+#blog .heading{
+    margin-bottom: 70px;
+}
+
+.blog-card{
+    width:calc(33.33% - 60px);
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 0 30px;
+
+  
+}
+
+.blog-card img{
+    width: 100%;
+    display: block;
+}
+.blog-card p{
+    margin-top: 29px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+     
+}
+
+.blog-card h4{
+    color: #444;
+    margin: 22px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-card a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+
+}
+.blog-card span{
+    color: #777;
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+.blog-card:hover{
+    background-color: var(--primarycolor);
+}
+.blog-card:hover *{
+    color: white;
+}
+
+/*Blog End*/
+
+/*footer start*/
+footer{
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+footer .info{
+    width: 25%;
+}
+
+footer .info p{
+    
+   padding: 17px 0;
+   color: #777;
+   line-height: 20px;
+}
+
+footer .info ul li{
+    display: inline-block;
+}
+
+footer .info ul li a{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primarycolor);
+    color: var(--primarycolor);
+    display: block;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.2s;
+    
+}
+
+footer .info ul li a:hover{
+    color: white;
+    background-color: var(--primarycolor);
+}
+/*footer start*/
+
+/*footer contact start*/
+footer .contact{
+    width: 25%;
+    padding: 0 15px;
+}
+
+footer .contact .icon{
+    width: 10%;
+    color: #777;
+}
+footer .contact .text{
+    width: 90%;
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--thirdfont);
+    color: #777;
+}
+/*footer contact end*/
+
+/*footer link start*/
+footer .importantlinks .heading{
+   margin-bottom: 20px;
+}
+footer.importantlinks h3{
+    padding: 17px 0;
+}
+ footer .importantlinks ul li{
+    margin-bottom: 36px;
+ }
+
+ 
+ 
+ footer .importantlinks ul li a{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--thirdfont);
+    
+ }
+
+ footer .importantlinks ul li a:hover{
+    color: var(--primarycolor);
+    margin-left: 14px;
+ }
+footer .importantlinks{
+    width: 20%;
+    
+} 
+/*footer link end*/
+
+/*footer-images start*/
+footer .footer-images{
+    width:  30%;
+    
+}
+footer .footer-images .heading{
+    margin-bottom: 20px;
+}
+
+footer .footerimage{
+    width:calc(25% - 14px);
+    margin: 5px 7px;
+
+}
+footer .footerimage img{
+    display: block;
+    width: 100%;
+}
+/*footer-images end*/
